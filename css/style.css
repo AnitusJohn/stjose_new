@@ -306,6 +306,12 @@ box-shadow: inset 1px 0px 39px 6px rgb(3, 168, 248);
     text-align: right;
     
   }
+
+  .mobile-nav-toggle svg{
+   width: 30px;
+   height: 30px;
+  background-color: #fff;
+  }
   
   .mobile-nav-toggle i {
     color: #2a489c;
@@ -638,11 +644,10 @@ margin-top: 20px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #0f2f57;
+    line-height: 40px;
   }
   
-  /*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
+  
   .about .content h3 {
     font-weight: 600;
     font-size: 26px;
@@ -2525,11 +2530,12 @@ margin-top: 20px;
 background: linear-gradient(151deg, rgba(0,10,36,1) 0%, rgba(247,9,9,1) 15%, rgba(0,212,255,1) 59%);
     }
 .icofont-close {
-  content: url("./images/faculty/close.png");
+  content: url('../images/faculty/close.png');
   width: 50px;
   height: 50px;
   z-index: 1;
 }
+
 .my_card{
 color: #ffff;
 border-radius: 20px;
