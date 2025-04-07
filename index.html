@@ -14702,6 +14702,41 @@ line-height: 74px;
         }
     </style>
 
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .cardd {
+        width: 40px;
+        border-radius: 16px;
+        height: 360px;
+        overflow: hidden;
+        background-color: #f0f0f0;
+        transition: flex 0.4s ease-in-out;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+        flex: 0.25;
+    }
+    
+    .cardd img {
+        height: 360px;
+        width: auto;
+        display: block;
+    }
+    
+    .cardd.active {
+        flex: 2 !important;
+        border-radius: 8px;
+    }
+    </style>
+  
+    
+
     <style>
         .modal-dialog {
             width: 430px !important;
@@ -15267,7 +15302,50 @@ line-height: 74px;
                 </div>
             </div>
         </section>
+<section class="container">
+    <span class="background">
+        <section class="gallery">
+            <article class="cardd">
+                <figure>
+                    <img
+                        src="./images/banner/aa.png"
+                        alt="Preview"
+                        title="Preview"
+                    />
+                </figure>
+            </article>
+            <article class="cardd">
+                <figure>
+                    <img
+                        src="./images/banner/bb.png"
+                        alt="Preview"
+                        title="Preview"
+                    />
+                </figure>
+            </article>
+            <article class="cardd">
+                <figure>
+                    <img
+                        src="./images/banner/cc.png"
+                        alt="Preview"
+                        title="Preview"
+                    />
+                </figure>
+            </article>
+            <article class="cardd">
+                <img
+                    src="./images/banner/dd.png"
+                    alt="Preview"
+                    title="Preview"
+                />
+            </article>
+            
+            <!--? more picture here  -->
+            <!-- Pictures from Freepik -->
+        </section>            
+    </span>
 
+</section>
 
      <section class="steps-area p-relative" style="background: #10affd">
                 
@@ -15853,7 +15931,21 @@ line-height: 74px;
             })
         });
     </script>
+  <script>
+    const cards = document.querySelectorAll(".cardd");
+    let current = 0;
 
+    function animateCards() {
+        cards.forEach((card, index) => {
+            card.classList.remove("active");
+        });
+        cards[current].classList.add("active");
+        current = (current + 1) % cards.length;
+    }
+
+    // Start animation
+    setInterval(animateCards, 2000); // change every 2 seconds
+</script>
 </body>
 
 </html>
