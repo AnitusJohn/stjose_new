@@ -2565,3 +2565,8 @@ border-radius: 16px;
 .bg_img_grn{
   background: url("./images/faculty/plant-6917093_1280.jpg");
 }
+
+.bank p a{
+ color: #fff;
+ font-weight: 600;
+}
