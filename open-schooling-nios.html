@@ -3680,6 +3680,50 @@ Open schooling in Marungoor ">
             margin-top: 15px;
         }
     </style>
+    <style>
+        .tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 0 20px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+label:hover {
+  color: red;
+  cursor: pointer;
+}
+    </style>
 </head>
 
 <body>
@@ -3776,19 +3820,14 @@ Open schooling in Marungoor ">
         <!-- <span>St.Joseph Community College - JCC</span> -->
         <img src="./images/பல்கலைக்கழக_தொலைதூர_மற்றும்_இணைய_வழி_கல்வி_மையம்_UNIVERSITY_DISTANCE_AND_ONLINE_EDUCATION_CENTRE_START.png"
         alt="">
+
         </a>
         <nav class="nav-menu d-none d-lg-block">
         <ul>
         <li class=" active">
         <a href="https://www.stjosephinstitute.in/">Home</a>
         </li>
-        
-        
-        
-        
-        
-        
-        
+            
         <li class=" active">
         <a href="./about.html">About us</a>
         </li>
@@ -3859,64 +3898,67 @@ Open schooling in Marungoor ">
              
         
               <h3 class="text-center">Nios Classes</h3>
-              <h4>Secondary Course</h4>
-             <p>This Course is equivalent to the Xth standard. You can choose subjects from the Scheme of Studies given in Table-. However, you will be required to successfully complete a minimum of five subjects with atleast one language or atmost two languages, which is compulsory for certification.</p>
-             <br>
-             <h4>Senior Secondary Course</h4>
-             <p>This Course is designed for those who have passed the Xth standard or equivalent examination from a recognized Board and would like to continue their education towards a Senior Secondary Certification, equivalent to XII standard.</p>
-             <p>Your can choose subjects from the Scheme of Studies given in Table. However, you will be required to successfully complete a minimum of five subjects with atleast one language or atmost two languages, which is compulsory for Certification.</p>
-             <p>“Best Nios coaching in Nagercoil and Nios / Bosse Admission in Nagercoil”.</p>
-            
-             <h5>Relevance</h5>
-            <p>NIOS is accepted by all the universities and colleges in India. It is given equal recognition as CBSE and ICSE. The NIOS courses and programs are functional, useful in daily life, and also set pathways for further studies. Successful alumni of NIOS are pursuing higher studies in institutions of international and national repute like IITs and many other reputed institutions of higher learning and in professional institutions. The students can take part in various competitive exams after completing 10+2 from NIOS like JEE MAINS AND JEE ADVANCE etc. It is also accepted by IIM and other colleges.</p>
-            <p>
-                Admissions open for Secondary &amp; Senior Secondary Classes.
-            </p>
-        
-            <br>
-            <h5> Flexibility</h5>
-            <p>The NIOS provides flexibility with respect to :</p>
-            <p><b>Choice of Subjects: </b>The learner has the option to choose subjects of his/her choice from the given list keeping in view the passing criteria.</p>
-        
-            <br>
-            <h5>Grade X</h5>
-            <h6>Group A</h6>
-            <p>Hindi,English</p>
-        <br>
-        <h5>Group B</h5>
-        <p>Mathematics, Science&amp;Technology, SocialScience, BusinessStudies, HomeScience, Indian Culture &amp; Heritage,Painting,Data Entry Operations,Accountancy,Psychology</p>
-        <br>
-        <h4>Grade XII</h4>
-        <h5>Group A</h5>
-        <p> Hindi, English</p>
-        <h5>Group B</h5>
-        <p>Mathematics, Home Science, Psychology, Geography, Economics, Business Studies, Painting, Data Entry Operations. </p>
-        <h5>Group C</h5>
-        <p> Physics, History, Environmental Science</p>
-        <h5>Group D</h5>
-        <p> Chemistry, Political Science</p>
-        <h5>Group E</h5>
-        <p> Biology, Accountancy</p>
-        
-        <h5>Group F</h5>
-        <p> Computer Science, Sociology</p>
-         
-        <br>
-        <h5>Admission :</h5>
-        <p>The learner has the option to take admission Online under various streams or through Study Centre, Facilitation Centre, Regional Centre for the Secondary and the Senior Secondary Education Courses.</p>
-        <br>
-        <h5>Examination :</h5>
-        <p>The Public Examinations are held twice a year. Nine examination chances are offered to the learner in five years. A learner can appear in examination during this period as and when he/she is well prepared and can avail the facility of credit accumulation.Nios coaching in nagercoil and Nios Admission In nagercoil.</p>
-        <br>
-        <h5>On-Demand Examination</h5>
-        <p>The learner has also the option to appear under the On-Demand Examination System (ODES) of NIOS at the Secondary and the Senior Secondary levels at the NIOS Headquarters, NOIDA, at the Regional Centres of NIOS.</p>
-        
-        
-        
-        
+ 
              
                 </div>
             </div>
+        </section>
+        <section class="container">
+            <div class="tabs">
+    
+                <div class="tab">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label for="tab-1">About NIOS 
+                    </label>
+                    
+                    <div class="content">
+                        stuff1
+                    </div> 
+                </div>
+                 
+                <div class="tab">
+                    <input type="radio" id="tab-2" name="tab-group-1">
+                    <label for="tab-2">NIOS Books
+                    </label>
+                    
+                    <div class="content">
+                        stuff2
+                    </div> 
+                </div>
+                 
+                 <div class="tab">
+                    <input type="radio" id="tab-3" name="tab-group-1">
+                    <label for="tab-3">NIOS TMA
+                    </label>
+                  
+                    <div class="content">
+                        stuff3
+                    </div> 
+                </div>
+                 
+                <div class="tab">
+                    <input type="radio" id="tab-4" name="tab-group-1">
+                    <label for="tab-4">Question Papers
+
+                    </label>
+                  
+                    <div class="content">
+                        stuff4
+                    </div> 
+                </div>
+
+                <div class="tab">
+                    <input type="radio" id="tab-5" name="tab-group-1">
+                    <label for="tab-5">Blog
+
+                    </label>
+                  
+                    <div class="content">
+                        stuff5
+                    </div> 
+                </div>
+                 
+             </div>
         </section>
 
         <section>
