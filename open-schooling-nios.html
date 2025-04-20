@@ -3747,6 +3747,89 @@ Open schooling in Marungoor ">
 
         }
     </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 991px;
+    min-width: 320px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+.accordion h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #444;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+    display: block;
+}
+.accordion-item
+    input[type="checkbox"]:checked
+    ~ .accordion-item-title
+    .icon:after {
+    content: "-";
+    font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion-item .icon {
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        padding: 0 16px;
+    }
+    .accordion h1 {
+        font-size: 22px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
@@ -5226,7 +5309,384 @@ To the evolution of a learning society.
 
                 </div>
                 <div class="tab-pane fade" id="ex1-tabs-6" role="tabpanel" aria-labelledby="ex1-tab-6">
-                    Tab 6 content
+                    <div>
+                        <div class="accordion">
+                            <h1>General FAQ From Parents
+                            </h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion1" name="faq">
+                                <label for="accordion1" class="accordion-item-title"><span class="icon"></span> Will I be able to study on my own? What if I waste time? There are no regular tests to force me to study.</label>
+                                <div class="accordion-item-desc">Wasting time is something that a student can do even in regular school. Even very established institutions have regular cases of students who drop out because they have not managed their time well. From what we see in regular schools, it is by now established that regular tests are not a reliable way of learning. What we are talking about in NIOS is learning in its true essence. Once it comes to that, you don’t need any external stimuli to perform. Here we should differentiate between true learning and just preparing for a test. These two are vastly different in both content and outcome. Please note that NIOS has no students, only learners. It is for those who consider their books and study material an integral part of their journey of life.</div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion2" name="faq">
+                                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Will I not become socially inept if I don’t go to regular school?</label>
+                                <div class="accordion-item-desc">Please browse through the NIOS website and you will get a list of celebrities who have passed out from NIOS. You will be actually socially more adaptable because as a NIOS learner you will have a lot of time for self-realization.</div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion3" name="faq">
+                                <label for="accordion3" class="accordion-item-title"><span class="icon"></span> After spending two to three years at home, will it be possible for a NIOS learner to adjust again to the activity levels of college life?</label>
+                                <div class="accordion-item-desc">Certainly. NIOS does not imply sedentary life. With all the other activities that a learner has to do in a day, it is certainly as work-filled as regular school. In this context, it would be relevant to mention that in many prestigious engineering colleges in India, there are students currently pursuing their masters’ program wherein they had done their under-grad in engineering only by correspondence.</div>
+                            </div>
+                        
+                            
+                        
+                        
+                        </div> 
+                        
+                        <div class="accordion">
+                            <h1>SENIOR SECONDARY PROGRAM FAQ From Parents
+                            </h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion11" name="faq">
+                                <label for="accordion11" class="accordion-item-title"><span class="icon"></span> Will I need a tutor to coach me during my senior secondary program?</label>
+                                <div class="accordion-item-desc">That depends on your aptitude for the subjects that you have chosen in the senior secondary program. The course-ware is quite self-sufficient and lucid. Having a tutor can be an added advantage.</div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion22" name="faq">
+                                <label for="accordion22" class="accordion-item-title"><span class="icon"></span>Will I lose out on my school friendships if I join NIOS?</label>
+                                <div class="accordion-item-desc">Not at all. In fact you will have a lot of time to evaluate your existing relationships and decide as to which all of those school friends you will continue with. You can actually and happily terminate all those forced friendships that you sometimes form when you are part of a group in regular school. NIOS is a great way to check-out your true friends and develop healthy relationships.</div>
+                            </div>
+
+                           
+                        
+                          
+                        
+                            
+                        
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>GETTING BACK TO REGULAR SCHOOL FAQ From Parents
+                            </h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion111" name="faq">
+                                <label for="accordion111" class="accordion-item-title"><span class="icon"></span> Is it possible to study in NIOS and later shift to regular schooling if necessary?</label>
+                                <div class="accordion-item-desc">This question arises only in case of students who have completed secondary schooling from NIOS and are looking to pursuing senior secondary program in a regular school. Yes it is possible provided the school feels your secondary marks fulfill the eligibility criteria required for the senior secondary program. However, most students who opt for NIOS usually do not go back to regular schooling.</div>
+                            </div>
+                        
+                       
+                        
+                        </div> 
+
+
+                        <div class="accordion">
+                            <h1>ADMISSIONS TO ENGINEERING COLLEGE FAQ From Parents </h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion1111" name="faq">
+                                <label for="accordion1111" class="accordion-item-title"><span class="icon"></span> Will I get my mark sheet in time before the counseling process commences?</label>
+                                <div class="accordion-item-desc">The mark sheet will be sent latest by the end of June of the relevant academic year. In case the University you are applying for requires the mark sheet earlier, then a special request made to the Regional Director during the month of May of the relevant year should suffice.</div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion2222" name="faq">
+                                <label for="accordion2222" class="accordion-item-title"><span class="icon"></span> NIOS senior secondary exam results are usually declared only by first week of June whereas other boards declare them as early as 3rd week of May. Is it not a disadvantage while applying for colleges?</label>
+                                <div class="accordion-item-desc">It is if the college insists on the mark sheet before June. There are two ways to circumvent this problem – one is to send in a written request to the regional director during the month of May and the other is to complete four out of five core subjects through ODE and submit that mark sheet to the college. In the second option you also need to submit a final mark sheet after completion of the fifth subject. Some colleges may offer provisional admission depending on the credentials of the student.</div>
+                            </div>
+                        
+                       
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>EMPLOYMENT FAQ From Parents</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion11111" name="faq">
+                                <label for="accordion11111" class="accordion-item-title"><span class="icon"></span>  Will studying in Open school affect my eligibility for employment in any way?</label>
+                                <div class="accordion-item-desc">No it will not. Usually employers are only interested in the institutions in which you pass out from as a
+                                    graduate or Post graduate. Schooling and its mode do not have any impact on employment. In any case,
+                                    the world is gradually moving towards non-discriminatory employment practices. So there is no cause
+                                    for worry.</div>
+                            </div>
+
+                          
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>MARKS & VALUATION FAQ From Parents</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion01111" name="faq">
+                                <label for="accordion01111" class="accordion-item-title"><span class="icon"></span> How is the valuation process in NIOS as compared to other boards?</label>
+                                <div class="accordion-item-desc">The valuation process is just and in some cases generous too. There are students who have scored marks above 96% in core subjects in senior secondary programs. Let us say, in this case 96% is the highest mark in that year for that subject. In case the university that you are applying has a normalization procedure, then you stand to gain since this would be equivalent to 100% scored in other boards.</div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion00111" name="faq">
+                                <label for="accordion00111" class="accordion-item-title"><span class="icon"></span> How does the revaluation process work in NIOS?</label>
+                                <div class="accordion-item-desc">Please refer to the NIOS website for a full description of the revaluation process and its relevant rules.</div>
+                            </div>
+
+                           
+
+                          
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>EXAMINATIONS FAQ From Parents</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion001111" name="faq">
+                                <label for="accordion001111" class="accordion-item-title"><span class="icon"></span> What is the superiority of the On Demand Examination?</label>
+                                <div class="accordion-item-desc">
+                                    <ul>
+                                        <li>You can write the exam once every month in a given year except in select months (April, May,
+                                            October and November).</li>
+                                        <li>The question paper is unique to each student which means if there are say, ten students appearing
+                                            for the same subject in a particular month at a given regional centre, each student will get a
+                                            computer-generated question paper which will be different from the others.</li>
+                                        <li>The examination hall is fitted with closed-circuit cameras and so there is no question of any malpractice.</li>
+                                        <li>You can complete the core or difficult subjects of your program earlier and take the easier ones
+                                            for the final public examination in case you are appearing for more than one subject. This will be
+                                            effective stress-management.</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+
+                     
+
+                           
+
+                          
+                        
+                        </div> 
+                        <div class="accordion">
+                            <h1>NIOS vs CCE FAQ From Parents</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordionto00011" name="faq">
+                                <label for="accordionto00011" class="accordion-item-title"><span class="icon"></span>Today CCE is being practiced in all CBSE schools in India and some state boards have also adopted CCE for secondary school completion. CCE is supposed to bring in the advantage of holistic development of the child. How does the secondary program of NIOS compare with CCE?</label>
+                                <div class="accordion-item-desc">
+                                    A home-schooled child on an average spends 3 hours on pure academics, and the remaining waking time of the day is usually spent in other activities like sports, music, entertainment, general reading, pursuing a hobby, running errands or experimenting in the kitchen. All these activities are actually an enhanced version of CCE and therefore NIOS is exceptionally strong at upholding the values that CCE demands. When we also consider the fact that these extra-curricular activities are learnt on a nonregimented basis, it adds to the pleasure of learning. A big bonus here is the emotional stability and comfort that a home environment provides. Another small but not-often noticed advantage is avoiding the stress of wearing school uniform.
+                                </div>
+                            </div>
+
+                     
+
+                           
+
+                          
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>SYLLABUS FAQ From Parents</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordion00011" name="faq">
+                                <label for="accordion00011" class="accordion-item-title"><span class="icon"></span> Is not the syllabus of the senior secondary program too vast compared to that of other boards? In most other boards in India, only XII std chapters are considered for the final board exams. Whereas, in NIOS we need to study the chapters of XI std too.</label>
+                                <div class="accordion-item-desc">
+                                    While technically it is true that the syllabus of NIOS includes XI std chapters for the board exams, you need to remember that you will have a lot more time available for preparation for the exams. Once you factor in the convenience of ODE, it becomes easier than what it looks. Incidentally, there are states like Andhra Pradesh whose senior secondary final exams include both XI and XII std syllabus
+                                </div>
+                            </div>
+
+                     
+
+                           
+
+                          
+                        
+                        </div> 
+
+                        <div class="accordion">
+                            <h1>General FAQ</h1>
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong1" name="faq">
+                                <label for="accordiong1" class="accordion-item-title"><span class="icon"></span> 1. What is NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    The National Institute of Open Schooling (NIOS) is an educational organisation which imparts education through Open and Distance Learning Mode and also conducts examinations for grant of certificates upto pre-degree level at par with other National Boards viz. the Central Board of Secondary Education (CBSE) and Council for the Indian School Certificate Examination (CISCE).
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong2" name="faq">
+                                <label for="accordiong2" class="accordion-item-title"><span class="icon"></span> 2. What is Open and Distance Learning system?</label>
+                                <div class="accordion-item-desc">
+                                    Open and Distance learning (ODL) is an innovative approach of providing opportunity of learning through Self Learning Material (SLM) and certain other strategies in a flexible manner at the pace of learners. In this mode, the learner is also provided academic support in the form of PCP and TMA in addition to SLM.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong3" name="faq">
+                                <label for="accordiong3" class="accordion-item-title"><span class="icon"></span> 3. What is the difference between Open Schooling and Regular Schooling?</label>
+                                <div class="accordion-item-desc">
+                                    Regular Schooling is a traditional method of face to face learning in a formal set-up of class room situation with a rigid time-table; whereas Open Schooling is a flexible method of providing self learning and its evaluation to a learner according to his/her own schedule. The Open learning system is very helpful to learners who could not avail the facility of formal schooling on account of economic, social or geographical considerations or they want to continue their study while working in some gainful employment.
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong4" name="faq">
+                                <label for="accordiong4" class="accordion-item-title"><span class="icon"></span>4. How different is NIOS from any other Institution for providing Education?</label>
+                                <div class="accordion-item-desc">
+                                    The NIOS follows learner centric approach of teaching through Open and Distance Learning (ODL) Mode. It offers a wide range of subjects in comparison to any other formal schooling programme. The learners are free to choose subject combination as per their needs and goals. The learners study at their own pace with the help of specially designed Self Learning Materials (SLM). Learning is supplemented by audio-video and face to face contact classes which are held at the study centres on holidays and weekends. The learners have freedom to appear in examination in their subjects as per their preparation.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong5" name="faq">
+                                <label for="accordiong5" class="accordion-item-title"><span class="icon"></span>5. What are the Courses offered by NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    NIOS offers the following programmes /courses:-
+                                    Open Basic Education (OBE) Programme, which includes following three levels
+                                    courses <br>
+                                    (i) OBE ‘A’ Level Course -Equivalent to class III <br>
+                                    (ii) OBE ‘B’ Level Course -Equivalent to class V <br>
+                                    (iii) OBE ‘C’ Level Course -Equivalent to class VIII <br>
+                                    a) Academic Courses <br>
+                                    (i) Secondary Course-Equivalent to class X <br>
+                                    (ii) Senior Secondary Course-Equivalent to class XII <br>
+                                    b) Vocational Education Courses <br>
+                                    c) Life Enrichment Programmes <br>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong6" name="faq">
+                                <label for="accordiong6" class="accordion-item-title"><span class="icon"></span> 6. Whether Secondary/Senior Secondary School Certificates obtained from NIOS have the same recognition as of other Boards?</label>
+                                <div class="accordion-item-desc">
+                                    Yes. The Secondary/Senior Secondary certificates obtained from NIOS have the same recognition as certificates issued by other Boards. NIOS is vested with the authority to conduct Public Examinations at Secondary and Senior Secondary level vide Govt. of India’s resolution dated 14 September 1990. Further, all the Boards either National or State including NIOS are following the National Curriculum Framework (2005). Thus, the Secondary and the Senior Secondary Certificates of NIOS are equivalent and at par to the Secondary and the Senior Secondary Certificate of other Boards.    
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong7" name="faq">
+                                <label for="accordiong7" class="accordion-item-title"><span class="icon"></span> 7. What is the organisational set-up of NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    The Headquarter of NIOS is situated at A-24-25, Institutional Area, Sector-62, NOIDA, (UP). The organizational structure includes five departments at the Headquarter, nineteen Regional Centres, two Sub-Regional Centres and one Cell located in different states/parts of the country. The departments of NIOS are
+                                    <br> (i) Academic <br> (ii) Vocational Education <br>(iii) Evaluation <br> (iv) Student Support Services and <br> (v) Administration.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong8" name="faq">
+                                <label for="accordiong8" class="accordion-item-title"><span class="icon"></span>8. How can I get information about the working of NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    You can visit NIOS website www.nios.ac.in or contact on Phone at EPABX: 120-4089800, Toll Free No. 18001809393
+                                </div>
+                            </div>
+
+                           
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong9" name="faq">
+                                <label for="accordiong9" class="accordion-item-title"><span class="icon"></span>9. By which resolution, NIOS has been vested with the authority to conduct examination at school level and for certification thereof?</label>
+                                <div class="accordion-item-desc">
+                                    The Government of India vide resolution no. F5.24/90Sch.3 dated 14thSeptember, 1990 published in part-I section no. 42 of the Gazette of India on 20th October, 1990 vested in NIOS the authority to conduct examinations at school level and for certification thereof.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong10" name="faq">
+                                <label for="accordiong10" class="accordion-item-title"><span class="icon"></span> 10. Has the Association of Indian Universities granted equivalency to NIOS Certificates?</label>
+                                <div class="accordion-item-desc">
+                                    Yes, the Association of Indian Universities vide its letter no. EV11/(354)/91 dated 25th July, 1991 has granted equivalency of courses of NIOS with those of other examinations of recognised Boards for purpose of admission to higher studies in Indian Universities.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong11" name="faq">
+                                <label for="accordiong11" class="accordion-item-title"><span class="icon"></span>  11. Whether a candidate passing the Secondary Examination from NIOS can take admission in class XI of any other Board?</label>
+                                <div class="accordion-item-desc">
+                                    Yes. As all the Boards whether National or of States including NIOS are following the National Curriculum Framework -2005 brought out by NCERT, hence, the NIOS students who have passed the Secondary examination from it are eligible to seek admission in Class XI of any other Board.
+                               
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong12" name="faq">
+                                <label for="accordiong12" class="accordion-item-title"><span class="icon"></span>12. Whether a candidate passing the Senior Secondary examination from NIOS is eligible for admission in Universities and Professional Colleges?</label>
+                                <div class="accordion-item-desc">
+                                    Yes. NIOS learners are eligible to seek admission in any university and professional college if otherwise fulfilling the eligibility criteria of that particular university/professional college.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong13" name="faq">
+                                <label for="accordiong13" class="accordion-item-title"><span class="icon"></span>13. What is the procedure for taking admission in NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    NIOS has introduced 100% On-line admission at the Secondary and the Senior Secondary level in order to facilitate learners in registering themselves with it.
+Under this scheme, learners have three options: <br>
+(i) They can register themselves on-line directly by visiting the website of
+NIOS i.e., www.nios.ac.in <br>
+(ii) They may visit their nearest AI (Study Centre)/Facilitation Centre and take
+their help for On-line registration.
+(iii) They may visit their Regional Centres and take their help for on line
+registration. <br>
+(iv) Candidates can also use the Services of Common Services Centres of
+Govt. of India for On-line registration throughout the Country.
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong14" name="faq">
+                                <label for="accordiong14" class="accordion-item-title"><span class="icon"></span>14. What is the eligibility criteria for admission to Secondary Course?</label>
+                                <div class="accordion-item-desc">
+                                    A person who has passed class VIII and has valid proof of attaining 14 years of age can apply for registration to a Secondary Course.A self certificate “I have studied enough to be able to pursue Secondary course” is also eligible for admission to the Secondary course. A person who had studied at Secondary level can also seek admission in NIOS either to complete his course or to improve his performance.   
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong15" name="faq">
+                                <label for="accordiong15" class="accordion-item-title"><span class="icon"></span> 15. What is the valid proof of date of birth?</label>
+                                <div class="accordion-item-desc">
+                                    The certificate of date of birth issued by a Municipal Corporation, a Municipal body, a village Panchayat or any other body’ authorised by Registrar, Birth and Death, Government of India is a valid proof. However, in case of orphans, street children etc., a medical certificate in respect of age issued by Government Hospital is also acceptable as valid proof.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong16" name="faq">
+                                <label for="accordiong16" class="accordion-item-title"><span class="icon"></span> 16. What is the validity period of admission?</label>
+                                <div class="accordion-item-desc">
+                                    Admission once registered is valid up to next 5 years.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong17" name="faq">
+                                <label for="accordiong17" class="accordion-item-title"><span class="icon"></span> 17. Does NIOS allow any fees concession?</label>
+                                <div class="accordion-item-desc">
+                                    Fee concession is provided to female and SC/ST/Ex-Servicemen and the differently abled candidates as per NIOS norms.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong177" name="faq">
+                                <label for="accordiong177" class="accordion-item-title"><span class="icon"></span>18. Can any learner take direct admission in the Senior Secondary courses?</label>
+                                <div class="accordion-item-desc">
+                                    No. To take admission in the Senior Secondary course, the candidate must have passed the Secondary course from a recognised Board.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong18" name="faq">
+                                <label for="accordiong18" class="accordion-item-title"><span class="icon"></span>19. What is minimum age to take admission in the Senior Secondary Course?</label>
+                                <div class="accordion-item-desc">
+                                    The minimum age to take admission in the Senior Secondary Course is 15 years, as on 31st July of the year of admission.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <input type="checkbox" id="accordiong19" name="faq">
+                                <label for="accordiong19" class="accordion-item-title"><span class="icon"></span>20. What are the mediums of studies available in NIOS?</label>
+                                <div class="accordion-item-desc">
+                                    The NIOS offers the Secondary courses in English, Hindi, Urdu, Marathi,Telugu, Gujarati, Malayalam and Odia mediums; and the Senior Secondary courses in English, Hindi, Urdu and Bengali mediums.
+                                </div>
+                            </div>
+
+                                           
+                        </div> 
+
+    </div>
+  
+  
+ 
+    </div>
+                    </div>
                 </div>
             </div>
         </section>
