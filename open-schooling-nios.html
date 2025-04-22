@@ -3830,6 +3830,48 @@ Open schooling in Marungoor ">
 }
 
     </style>
+    <style>
+        ul#tabs {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+ul#tabs li {
+  display: inline-block;
+  background-color: #252525;
+  border-bottom: solid 2px grey;
+  padding: 10px 20px;
+  margin-bottom: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+ul#tabs li:hover {
+  background-color: grey;
+}
+ul#tabs li.active {
+  background-color: #00aeef;
+}
+ul#tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#content-tab div {
+  display: none;
+}
+#content-tab div.active {
+  display: block;
+}
+
+/* #content-tab>div{
+  text-align:center;
+  background-color:#00618c;
+  width:450px;
+  margin:0 auto;
+  padding:15px 10px;
+  color:#fff;
+} */
+    </style>
 </head>
 
 <body>
@@ -4291,7 +4333,68 @@ To the evolution of a learning society.
                     </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-                    Tab 2 content
+                   <div style="border: 1px solid #010afe; border-radius: 10px; padding: 20px;">
+                    <h3 class="align-items-center">10th Standard Schooling
+                    </h3>
+                    <ul id="tabs">
+                        <li class="active">
+                            English </li>
+                        <li>
+                            Arabic </li>
+                        <li>Hindi</li>
+                        <li>Maths</li>
+                        <li>Science</li>
+                        <li>Social Science</li>
+
+                      </ul>
+                      <div id="content-tab">
+                        <div class="active">
+<h3>Material in PDF</h3>
+<ul>
+    <li><a href="">Learner Guide (229 KB)</a>  </li>
+    <li><a href="">First page</a> </li>
+    <li><a href="">Snake Bite (138 KB)</a> </li>
+    <li><a href="">Kondiba-A Hero (256 KB) </a></li>
+    <li><a href="">Tall Trees (150 KB)</a></li>
+    <li><a href="">A Tiger Comes to Town-I (289 KB) </a></li>
+    <li><a href="">A Tiger Comes to Town-II (366 KB)</a></li>
+    <li><a href="">The Shoeshine (185 KB)</a></li>
+    <li><a href="">A Birthday Letter (162 KB)</a></li>
+    <li><a href="">Nine Gold Medals (265 KB) </a></li>
+    <li><a href="">Noise: How It Affects Our Lives (190 KB)</a></li>
+    <li><a href="">My Elder Brother (192 KB) </a></li>
+    <li><a href="">Indian Weavers (152 KB) </a></li>
+    <li><a href="">The Last Stone Mason (206 KB) </a></li>
+    <li><a href="">Stealing and Atonement (130 KB) </a></li>
+    <li><a href="">My Vision for India (155 KB)</a></li>
+    <li><a href="">My Only Cry (349 KB) </a></li>
+    <li><a href="">Caring for Others (181 KB)</a></li>
+    <li><a href="">The Little Girl (208 KB)</a></li>
+    <li><a href="">A Prayer for Healing (224 KB) </a></li>
+    <li><a href="">New Good Things from Rubbish (227 KB)</a></li>
+    <li><a href="">The Village Pharmacy (217 KB) </a></li>
+    <li><a href="">The Truth (110 KB) </a></li>
+    <li><a href="">The Return of the Lion (One Act Play) (111 KB) </a></li>
+    <li><a href="">Co-operate and Prosper (373 KB) </a></li>
+    <li><a href="">Once Upon a Time (122 KB)</a></li>
+    <li><a href="">Ustad Bismillah Khan (316 KB)</a></li>
+    <li><a href="">The Parrot Who Wouldn’t Talk (806 KB) </a></li>
+    <li><a href="">Sample Question Paper (46 KB)</a></li>
+
+
+
+
+</ul>
+
+                        </div>
+                        <div>Block 2</div>
+                        <div>Block 3</div>
+                        <div>Block 4</div>
+                        <div>Block 5</div>
+                        <div>Block 6</div>
+
+                      </div>
+                   </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
                     <h4>
@@ -5901,7 +6004,25 @@ Govt. of India for On-line registration throughout the Country.
         });
     </script>
 
+<script>
+    $(document).ready(function() {
 
+$("ul#tabs li").click(function(e) {
+  var tabIndex = $(this).index();
+  if (!$(this).hasClass("active")) {
+    var nthChild = tabIndex + 1;
+    $("ul#tabs li.active").removeClass("active");
+    $(this).addClass("active");
+    $("#content-tab div.active").removeClass("active");
+    $("#content-tab div:nth-child(" + nthChild + ")").addClass("active");
+  } else {
+    $(this).removeClass("active");
+    $("#content-tab div.active").removeClass("active");
+  }
+});
+});
+
+</script>
 
 </body>
 
