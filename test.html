@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .modal-content{
-    width: 50%;
-    margin:auto;
-}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smooth Infinite Carousel</title>
+  <style>
+   
+
+    .carousel-wrapper {
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 2rem;
+      will-change: transform;
+    }
+
+    .recard {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 260px;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .recard img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <span class="close" data-dismiss="modal" style="
-                      text-align: right;
-                      font-size: 49px;
-                      color: #333;
-                      cursor: pointer;
-                      position: relative;
-                  ">&times;</span>
-            <img src="https://www.emii.edu.in/assets/img/modal/pop.jpg" width="100%" style="border-radius: 9px; margin-top: -27px;">
-          </div>
-        </div>
-      </div>
 
-      <script type="text/javascript">
-        $(document).ready(function(){
-                // Show the modal on page load
-                $('#myModal').modal('show');
-                $('.close').click(function(){
-                    $('#myModal').modal('hide');
-                })
-            });
-    </script>
+<div class="carousel-wrapper">
+  <div class="carousel-track" id="carousel-track">
+    <div class="recard"><img src="https://simpleicons.org/icons/javascript.svg" alt="JS"/><p>JavaScript</p></div>
+    <div class="recard"><img src="https://simpleicons.org/icons/cplusplus.svg" alt="C++"/><p>C++</p></div>
+    <div class="recard"><img src="https://simpleicons.org/icons/lua.svg" alt="Lua"/><p>Lua</p></div>
+    <div class="recard"><img src="https://simpleicons.org/icons/go.svg" alt="Go"/><p>Go</p></div>
+    <div class="recard"><img src="https://simpleicons.org/icons/zig.svg" alt="Zig"/><p>Zig</p></div>
+    <div class="recard"><img src="https://simpleicons.org/icons/rust.svg" alt="Rust"/><p>Rust</p></div>
+  </div>
+</div>
+
+<script>
+  const track = document.getElementById("carousel-track");
+
+  // Duplicate content for infinite effect
+  track.innerHTML += track.innerHTML;
+
+  let scrollX = 0;
+  const speed = 0.5;
+
+  function animate() {
+    scrollX += speed;
+    if (scrollX >= track.scrollWidth / 2) {
+      scrollX = 0;
+    }
+    track.style.transform = `translateX(-${scrollX}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
 </body>
 </html>
