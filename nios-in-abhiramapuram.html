@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Schooling - NIOS</title>
+  <style>
+    #loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 18px;
+      color: #004aad;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading indicator -->
+  <div id="loader">Loading content...</div>
+
+  <!-- Container for loaded content -->
+  <div id="commonContent" style="display:none;"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loader = document.getElementById("loader");
+      const contentDiv = document.getElementById("commonContent");
+
+      // Try to load the common page
+      fetch("open-schooling-nios.html", { cache: "no-store" })
+        .then(response => {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.text();
+        })
+        .then(html => {
+          // Hide loader and show content
+          loader.style.display = "none";
+          contentDiv.style.display = "block";
+          contentDiv.innerHTML = html;
+        })
+        .catch(err => {
+          loader.textContent = "⚠️ Error loading content: " + err.message;
+          console.error("Fetch error:", err);
+        });
+    });
+  </script>
+</body>
+</html>
